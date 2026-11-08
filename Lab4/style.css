@@ -1,0 +1,286 @@
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+p.about-me {
+    font-size: 1.2em;
+}
+a.link-bio:link { color: #0073ff; }
+a.link-bio:visited { color: #9900ff; }
+a.link-now:link { color: #00aa50; }
+a.link-now:visited { color: #ff6600; }
+a.link-friends:link { color: #ff0055; }
+a.link-friends:visited { color: #009999; }
+a.link-gallery:link { color: #ffbb00; }
+a.link-gallery:visited { color: #666666; }
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .nav-links p {
+        width: 40%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-links {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .nav-links p {
+        width: auto;
+    }
+}
+h1 {
+    text-align: center;
+    font-size: 22px;
+}
+.back-link {
+    font-style: italic;
+}
+h3 {
+    text-align: center;
+}
+.btn-menu {
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px dashed #001f3f;
+}
+.btn-menu:link, .btn-menu:visited {
+    background-color: #0055ff;
+    color: #ffffff;
+}
+.btn-menu:hover {
+    background-color: magenta;
+    color: #000000;
+}
+.btn-menu:active {
+    background-color: yellow;
+    color: #000000;
+}
+
+.bio-card {
+    border: 1px solid #000000;
+    padding: 15px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.bio-card h2 {
+    font-size: 1.2em;
+}
+.bio-card p {
+    font-size: 1.1em;
+}
+
+#info { background-color: #eef2f7; color: #001f3f; }
+#childhood { background-color: #fff0f5; color: #4a002a; }
+#school { background-color: #f0fff0; color: #003300; }
+#after-school { background-color: #fffdf0; color: #4a3b00; }
+#university { background-color: #f6f0ff; color: #2b0054; }
+
+.to-content {
+    font-weight: bold;
+}
+.go-up {
+    text-transform: uppercase;
+}
+
+.bio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+    .bio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #university {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .bio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #info { grid-column: span 1; }
+    #childhood { grid-column: span 1; }
+    #school { grid-column: span 1; }
+    #after-school {
+        grid-column: span 1.5;
+    }
+    #university {
+        grid-column: span 1.5;
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+}
+.back-link {
+    font-style: italic;
+}
+h2 {
+    text-align: center;
+}
+ul.shopping-list > li:nth-child(odd) {
+    background-color: #e0e0e0;
+    color: #000000;
+}
+ul.shopping-list > li:nth-child(even) {
+    background-color: #ffffff;
+    color: #000000;
+}
+ol.recipe-list > li:nth-child(3), ol.recipe-list > li:nth-child(5) {
+    cursor: pointer;
+}
+ol.recipe-list > li:nth-child(4) {
+    background-color: #fff3cd;
+}
+
+.nowadays-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.list-section {
+    width: 100%;
+}
+@media (min-width: 992px) {
+    .nowadays-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .list-section {
+        width: 48%;
+    }
+}
+
+.friends-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.friends-table th, .friends-table td {
+    border: 1px solid #333333;
+    padding: 10px;
+    text-align: left;
+}
+.friends-table tr:first-child th {
+    text-align: center;
+    background-color: #28a745;
+    color: #ffffff;
+    font-weight: bold;
+}
+.friends-table tr:nth-child(even) td {
+    background-color: #e0e0e0;
+}
+.friends-table tr:nth-child(odd):not(:first-child) td {
+    background-color: #ffffff;
+}
+.friends-table td:last-child, .friends-table th:last-child {
+    text-align: right;
+}
+.friends-table th {
+    font-size: 1.1em;
+}
+.friends-table td {
+    font-size: 1em;
+}
+@media (min-width: 768px) {
+    .friends-table th {
+        font-size: 1.2em;
+    }
+    .friends-table td {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 992px) {
+    .friends-table th {
+        font-size: 1.3em;
+    }
+    .friends-table td {
+        font-size: 1.2em;
+    }
+}
+h1 {
+    text-align: center;
+    font-size: 20px;
+}
+.back-link {
+    font-style: italic;
+}
+h2.main-title {
+    text-align: center;
+}
+h3.title-root {
+    text-align: center;
+    font-size: 1.1em;
+}
+h3.title-folder {
+    text-align: center;
+    font-size: 1.2em;
+}
+h3.title-online {
+    text-align: center;
+    font-size: 1.3em;
+}
+.gallery-item img {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery-item {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .gallery-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .item-1, .item-2 {
+        width: 48%;
+    }
+    .item-3 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .gallery-container {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .item-1, .item-2, .item-3 {
+        width: 32%;
+    }
+}
