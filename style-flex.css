@@ -1,28 +1,92 @@
-
-   body {
-       font-family: Arial, sans-serif;
-       margin: 20px;
-   }
-
-.main-title {
-    text-align: center;
-}
-
-.row-flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.row-flex > .col {
-    border: 2px solid #2e7d32;
-    padding: 15px;
+body {
+    background-color: #d3d3d3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
     box-sizing: border-box;
-    flex: 1 1 30%;
-    min-width: 280px;
 }
 
-.nav-links {
-    margin-top: 40px;
+h1 {
     text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+.blocks-container {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block {
+    background-color: #d4edda;
+    border: 2px solid #000000;
+    padding: 25px 15px 15px 15px;
+    width: 300px;
+    height: 220px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 15px;
+}
+
+.block h2 {
+    position: absolute;
+    top: -12px;
+    right: 15px;
+    margin: 0;
+    padding: 2px 12px;
+    font-size: 16px;
+    border: 2px solid #000000;
+}
+
+.block-1 h2 { background-color: #ffc107; }
+.block-2 h2 { background-color: #e83e8c; color: #ffffff; }
+.block-3 h2 { background-color: #ffffff; }
+
+.block p {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #000000;
+}
+
+.links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.links a {
+    display: inline-block;
+    margin: 0 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    .blocks-container {
+        width: 630px;
+    }
+    .block-1, .block-2 {
+        width: 300px;
+    }
+    .block-3 {
+        width: 630px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blocks-container {
+        width: 100%;
+        max-width: 400px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .block {
+        width: 100%;
+        height: auto;
+    }
 }
